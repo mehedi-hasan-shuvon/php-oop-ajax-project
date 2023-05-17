@@ -1,0 +1,80 @@
+.container{
+    width: 700px;
+    height: auto;
+    min-height: 200px;
+    margin: 0 auto;
+    background-color: rgb(147, 173, 173);
+    box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+select{
+    width: 94%;
+    text-align: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.btn{
+    width: 94%;
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.read-btn{
+    width: 94%;
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 94%;
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.home-btn{
+    width: 94%;
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+}
+
+table,th,td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }

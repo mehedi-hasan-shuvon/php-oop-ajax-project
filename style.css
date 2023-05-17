@@ -1,5 +1,5 @@
 .container{
-    width: 700px;
+
     height: auto;
     min-height: 200px;
     margin: 0 auto;
@@ -9,24 +9,22 @@
 }
 
 input{
-    width: 90%;
+    width: 100%;
     padding: 10px;
-    margin-top: 7px;
+   
 }
 
 select{
-    width: 94%;
+    width: 100%;
     text-align: left;
     padding: 10px;
-    margin-top: 7px;
+   
 }
 
 .btn{
-    width: 94%;
-    background-color: blueviolet;
+    width: 100%;
     padding: 10px;
     margin-top: 7px;
-    color: white;
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -78,3 +76,8 @@ table,th,td{
     display: inline-block;
     margin-right: 10px;
   }
+
+
+.custom-btn{
+    background-color: red;
+}

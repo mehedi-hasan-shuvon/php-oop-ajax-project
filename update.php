@@ -32,10 +32,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>Edit Page</h1>
-        <input type="text" id="sname" value="<?php echo $name ?>" placeholder="enter name"><br>
-        <input type="number" id="sage" value="<?php echo $age ?>" placeholder="enter age"><br>
-       
+        <h1>Update Page</h1>
+        <input type="text" id="sname" value="<?php echo $name ?>" placeholder="enter name">
+        <input type="number" id="sage" value="<?php echo $age ?>" placeholder="enter age">
         <select name="scity" id="scity">
                 <?php
                     $obj->select('citytb','*');
@@ -46,8 +45,8 @@
                 ?>
         </select>
         <br>
-        <button class="btn" onclick="UPDATE_DATA(<?php echo $id ?>)">Update Data</button>
-        <button class="btn" onclick="home()">Home</button>
+        <button class="btn btn-primary" onclick="UPDATE_DATA(<?php echo $id ?>)">Update Data</button>
+        <button class="btn btn-warning" onclick="home()">Home</button>
     </div>
 
     <script>

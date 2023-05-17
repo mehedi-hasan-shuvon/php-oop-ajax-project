@@ -128,9 +128,9 @@ function generateHtmlTable(data) {
 
     var cell5 = document.createElement("td");
     cell5.innerHTML =
-      "<button class='btn btn-primary' onclick='Update(" +
+      '<button type="button" class="btn btn-primary custom-btn"  onclick="Update(' +
       data[i].id +
-      ")'>Update</button>";
+      ')">Update</button>';
     row.appendChild(cell5);
 
     var cell6 = document.createElement("td");

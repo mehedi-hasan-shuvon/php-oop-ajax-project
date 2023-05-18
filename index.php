@@ -1,5 +1,5 @@
 <?php
-    include "database.php";
+    include "app/models/database.php";
     $obj=new Database();
 
 ?>

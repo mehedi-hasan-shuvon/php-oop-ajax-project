@@ -1,5 +1,5 @@
 <?php 
-    include 'database.php';
+    include '../models/database.php';
     $obj=new Database();
     $join= "citytb ON students.city=citytb.cid";
     $colName='students.id,students.student_name,students.age,citytb.cname';

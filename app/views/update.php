@@ -1,5 +1,5 @@
 <?php 
-    include "database.php";
+    include "../models/database.php";
     $obj=new Database();
     echo $_GET['id'];
     $join= "citytb ON students.city=citytb.cid";

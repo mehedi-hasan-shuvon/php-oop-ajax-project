@@ -6,7 +6,7 @@ $(".btn").click(function () {
 
   $.ajax({
     method: "POST",
-    url: "insert.php",
+    url: "app/controllers/insert.php",
     data: { name: name, age: age, city: city },
     success: function (data) {
       alert("Data Inserted Successfully");
@@ -146,7 +146,7 @@ function generateHtmlTable(data) {
 
 function fetchData() {
   $.ajax({
-    url: "fetch.php",
+    url: "app/controllers/fetch.php",
     method: "POST",
     success: function (data) {
       var data = JSON.parse(data);
@@ -162,7 +162,7 @@ function Delete(userId) {
   $con = confirm("Are you sure you want to delete this data?");
   if ($con == true) {
     $.ajax({
-      url: "delete.php",
+      url: "app/controllers/delete.php",
       method: "POST",
       data: { id: userId },
       success: function (data) {
@@ -181,7 +181,7 @@ function Update(userId) {
   var city = $("#scity").val();
 
   $.ajax({
-    url: "update.php",
+    url: "app/views/update.php",
     method: "GET",
     data: { id: userId },
     success: function (data) {
@@ -197,7 +197,7 @@ function UPDATE_DATA(userId) {
   var age = $("#sage").val();
   var city = $("#scity").val();
   $.ajax({
-    url: "updateQuery.php",
+    url: "app/controllers/updateQuery.php",
     method: "GET",
     data: { name: name, age: age, city: city, id: userId },
     success: function (data) {

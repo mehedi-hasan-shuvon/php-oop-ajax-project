@@ -1,22 +1,17 @@
 <?php 
     include "../models/database.php";
     $obj=new Database();
-    echo $_GET['id'];
+
     $join= "citytb ON students.city=citytb.cid";
     $where="id=".$_GET['id'];
     $obj->select('students','*',$join,$where,null,null);
     $result=$obj->getResult();
 
-
-
-
-    foreach ($result as list("id"=>$id,"student_name"=>$name,"age"=>$age,"city"=>$city, "cname"=>$cname)) {
-        echo $id;
-        echo $name;
-        echo $age;
-        echo $city;
-        echo $cname;
-    }
+    $id=$result[0]['id'];
+    $name=$result[0]['student_name'];
+    $age=$result[0]['age'];
+    $city=$result[0]['city'];
+    $cname=$result[0]['cname'];
 
 ?>
 
@@ -31,7 +26,7 @@
     
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <h1>Update Page</h1>
         <input type="text" id="sname" value="<?php echo $name ?>" placeholder="enter name">
         <input type="number" id="sage" value="<?php echo $age ?>" placeholder="enter age">

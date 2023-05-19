@@ -2,11 +2,13 @@
     include '../models/database.php';
     $obj=new Database();
 
+    $requestData = json_decode(file_get_contents('php://input'), true);
+    $userId = $requestData['id'];
+    $sname = $requestData['name'];
+    $sage = $requestData['age'];
+    $scity = $requestData['city'];
 
-    $userId=$_GET['id'];
-    $sname=$_GET['name'];
-    $sage=$_GET['age'];
-    $scity=$_GET['city'];
+
     
     $where="id=".$userId;
     

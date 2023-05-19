@@ -2,9 +2,14 @@
      include '../models/database.php';
      $obj=new Database();
     
-     $sname=$_POST['name'];
-     $sage=$_POST['age'];
-     $scity=$_POST['city'];
+    //  $sname=$_POST['name'];
+    //  $sage=$_POST['age'];
+    //  $scity=$_POST['city'];
+    $requestData = json_decode(file_get_contents('php://input'), true);
+    $sname = $requestData['name'];
+    $sage = $requestData['age'];
+    $scity = $requestData['city'];
+    
 
      //get the cname from citytb
         $where="cid=".$scity;

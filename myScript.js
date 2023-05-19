@@ -119,6 +119,15 @@ app.controller("myCtrl", ($scope, $http) => {
       id: userId,
     };
 
+    if (
+      $scope.updatedName === "" ||
+      $scope.updatedAge === "" ||
+      typeof $scope.updatedCityId === "undefined"
+    ) {
+      alert("Please fill all the fields");
+      return;
+    }
+
     //get the base url
     var url = window.location.href;
     var baseUrl = url.split("app")[0];
